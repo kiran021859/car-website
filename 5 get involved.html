@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="heading">
+    <div class="heading-text">
+      <h1>GET INVOLVED</h1>
+    </div>
+  </section>
+  
+  <nav class="navigation">
+    <ul>
+      <li><a href="Index.html">home page</a></li>
+      <li><a href="2 about us.html">about-us</a></li>
+      <li><a href="3 our work.html">our-work</a></li>
+      <li><a href="4 photo galary.html">galary</a></li>
+      <li><a href="5 get involved.html">get-involved</a></li>
+      <li><a href="6 contact us.html">contact-us</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <form class="myform" method="get" enctype="application/x-www-form-urlencoded"
+    action="/html/codes/html_form_handler.cfm">
+    <p>
+      <label>Name
+        <input id="name" type="name" name="customer_name" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Phone
+        <input id="phone" type="number" name="phone_number">
+      </label>
+    </p>
+
+    <p>
+      <label>Email
+        <input id="email" type="email" name="email_address">
+      </label>
+    </p>
+
+    <p>
+      <label>Extra information
+        <textarea id="extra_information" name="comments" maxlength="500"></textarea>
+      </label>
+    </p>
+
+    <fieldset>
+      <legend>where do you live?</legend>
+      <p><label> <input type="radio" name="town" required value="Grabouw"> Grabouw </label></p>
+      <p><label> <input type="radio" name="town" required value="Caledon"> Caledon </label></p>
+      <p><label> <input type="radio" name="town" required value="Hermanus"> Hermanus </label></p>
+      <p><label> <input type="radio" name="town" required value="Swellendam"> Swellendam </label></p>
+      <p><label> <input type="radio" name="town" required value="Bredasdorpn"> Bredasdorp </label></p>
+      <p><label> <input type="radio" name="town" required value="other"> other </label></p>
+    </fieldset>
+
+    <p><button onclick="myFunction()">Submit</button></p>
+    <p><button type="reset">reset</button></p>
+  </form>
+
+  <script>
+    function myFunction() {
+      var inpObj = document.getElementById("name");
+      if (!inpObj.checkValidity()) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+      }
+    }
+    function myFunction() {
+      var inpObj = document.getElementById("phone");
+      if (!inpObj.checkValidity()) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+      }
+    }
+    function myFunction() {
+      var inpObj = document.getElementById("email");
+      if (!inpObj.checkValidity()) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+      }
+    }
+    function myFunction() {
+      var inpObj = document.getElementById("extra_information");
+      if (!inpObj.checkValidity()) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+      }
+    }
+  </script>
+</body>
+<footer>
+  <h4>Overberg Toyota Ownwers &copy; 2020</h4>
+</footer>
+
+</html>
